@@ -20,6 +20,7 @@ return new class extends Migration
             $table->unsignedInteger('views')->default(0);
             $table->foreignId('user_id')->constrained()->on('users')->onDelete('cascade');
             $table->string('avatar')->nullable();
+            $table->string('author_name');
             $table->timestamps();
             $table->engine = 'InnoDB';
         });

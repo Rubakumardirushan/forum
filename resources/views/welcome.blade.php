@@ -87,6 +87,98 @@
                 display: none;
             }
         }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .header button {
+            background-color: #1f6feb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header input {
+            background-color: #21262d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .thread {
+            background-color: #21262d;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+        .thread:hover {
+            background-color: #30363d;
+        }
+        .thread a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .thread .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .thread .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .thread .header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .thread .header .username {
+            color: #58a6ff;
+        }
+        .thread .body {
+            margin-bottom: 10px;
+        }
+        .thread .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .thread .footer small {
+            color: #8b949e;
+        }
+        .thread .footer .actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .thread .footer .actions button {
+            background-color: transparent;
+            border: none;
+            color: #8b949e;
+            cursor: pointer;
+        }
+        .thread .footer .actions button:hover {
+            color: #58a6ff;
+        }
     </style>
     @livewireStyles
 </head>
