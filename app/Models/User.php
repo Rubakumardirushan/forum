@@ -23,6 +23,7 @@ class User extends Authenticatable
         'github_id',
         'google_id',
         'email_verified_at',
+        'avatar'
         
      
 

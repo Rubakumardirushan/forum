@@ -36,6 +36,7 @@ $userid=$githubUser->id;
                 'email' => $githubUser->email,
                 'github_id' => $userid,
                 'email_verified_at' => now(),
+                'avatar' => $githubUser->avatar,
                 
             ]);
            

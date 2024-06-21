@@ -42,6 +42,7 @@ public function store(){
         'title' => 'required',
         'body' => 'required',
         'channel' => 'required'
+        
     ]);
 
     $thread = new Thread();
@@ -49,6 +50,7 @@ public function store(){
     $thread->body = $this->body;
     $thread->channel = $this->channel;
     $thread->user_id = Auth::id();
+    $thread->avatar = Auth::user()->avatar;
     $thread->save();
     session()->flash('message', 'Thread created successfully.');
     $this->title = '';

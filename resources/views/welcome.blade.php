@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
         body {
             background-color: #121212;
             color: #fff;
@@ -21,6 +27,15 @@
         .forum-text {
             display: none;
         }
+        .custom-bg {
+        background-color: #17223B; /* Use the exact color from the image */
+    }
+    .custom-text {
+        color: white; /* Use the exact color from the image */
+    }
+    .custom-hover:hover {
+        background-color: #3B5998; /* Use the exact hover color */
+    }
 
         @media (max-width: 576px) {
             .center {
@@ -76,7 +91,7 @@
     @livewireStyles
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="bg-blue-900 text-white text-center py-10 flex items-center justify-center relative h-24">
+    <header class="bg-black-900 text-white text-center py-10 flex items-center justify-center relative h-24 rounded-3xl">
         <span class="z-10 text-2xl">Welcome to Developer Community</span>
         <div class="absolute inset-0 bg-header"></div>
     </header>

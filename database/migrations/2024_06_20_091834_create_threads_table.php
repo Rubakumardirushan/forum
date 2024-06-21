@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('replies_count')->default(0);
             $table->unsignedInteger('views')->default(0);
             $table->foreignId('user_id')->constrained()->on('users')->onDelete('cascade');
+            $table->string('avatar')->nullable();
             $table->timestamps();
             $table->engine = 'InnoDB';
         });
